@@ -1,0 +1,19 @@
+{
+  "name": "superagent",
+  "private": true,
+  "scripts": {
+    "build": "aixyz build",
+    "dev": "aixyz dev"
+  },
+  "dependencies": {
+    "ai": "^6",
+    "aixyz": "0.31.0",
+    "safety-agent": "^0.1.6",
+    "zod": "^4"
+  },
+  "devDependencies": {
+    "@types/bun": "^1",
+    "typescript": "^5",
+    "use-agently": "latest"
+  }
+}
