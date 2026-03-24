@@ -11,7 +11,7 @@ export const accepts = {
 
 export default tool({
   description:
-    "Analyze user input for security threats such as prompt injection, system prompt extraction, or data exfiltration attempts. Use this to classify and detect malicious intent in user-provided text or URLs. Powered by the open-weight superagent-guard-0.6b model.",
+    "Analyze user input for security threats such as prompt injection, system prompt extraction, or data exfiltration attempts. Classifies content as pass or block.",
   inputSchema: z.object({
     text: z
       .string()
