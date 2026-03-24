@@ -13,7 +13,7 @@ Your training data is outdated — the docs are the source of truth.
 ## Project Overview
 
 Monorepo for AI security agents deployed on **[aixyz.sh](https://aixyz.sh)**, using Bun workspaces and Turborepo for orchestration.
-All agents are built with the **aixyz** framework and deployed to **Vercel** (production).
+All agents are built with the **aixyz** framework and deployed to **Railway** (production) using Docker.
 
 ### Key Skills (Claude Code)
 
@@ -72,7 +72,7 @@ agents/              # Headless agents (no UI, API-only)
 packages/            # Shared packages
 ```
 
-- **agents/** — Headless agents. No UI, just an aixyz A2A endpoint deployed to Vercel.
+- **agents/** — Headless agents. No UI, just an aixyz A2A endpoint deployed to Railway.
 
 Workspaces are defined in root `package.json`: `agents/*`, `packages/*`.
 
@@ -84,7 +84,7 @@ Each agent under `agents/` follows this structure:
 - `app/agent.ts` — Main agent entry point. Exports a default `ToolLoopAgent` and an `accepts` config for pricing
 - `app/erc-8004.ts` — ERC-8004 on-chain registration metadata (required — always include when creating agents)
 - `app/tools/` — Optional directory for custom tool definitions (using `tool()` from `ai` SDK)
-- `vercel.json` — Deployment config (`bunx aixyz build`)
+- `Dockerfile` — Railway deployment config (standalone Bun build)
 - `package.json` — Agent-specific dependencies; build/dev via `aixyz build` / `aixyz dev`
 
 ### Key Dependencies
@@ -124,15 +124,6 @@ Use `stopWhen: stepCountIs(N)` to cap LLM loop iterations and prevent runaway co
 - **10** — Standard agents
 - **15** — Multi-step agents
 - **16** — Complex multi-tool agents
-
-### Vercel maxDuration
-
-Set based on expected execution time:
-
-- **default (~60s)** — Simple agents
-- **60s** — Short but network-dependent
-- **120s** — Search/analysis agents
-- **300s** — Long-running async tasks
 
 ### Response Formats
 
