@@ -1,0 +1,13 @@
+/shelf/
+/workspace.xml
+/queries/
+/codeStyles/
+/dataSources/
+/dataSources.local.xml
+/httpRequests/
+/dictionaries/
+/misc.xml
+copilot*
+
+/git_toolbox_prj.xml
+/material_theme_project_new.xml

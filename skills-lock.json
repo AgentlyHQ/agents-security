@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "aixyz": {
+      "source": "agentlyhq/use-agently",
+      "sourceType": "github",
+      "computedHash": "9a9d7d19698780447f249eacd6b5994cb8ef4b906bd5f94c3182494181744b37"
+    },
+    "use-agently": {
+      "source": "agentlyhq/use-agently",
+      "sourceType": "github",
+      "computedHash": "6d2208569de19593643fba499bc572fc31420f57fa6f3f19e34d062c70afaa9c"
+    }
+  }
+}
