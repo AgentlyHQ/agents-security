@@ -6,5 +6,5 @@ RUN bun run build
 
 FROM oven/bun:1-slim
 WORKDIR /app
-COPY --from=build /app/.aixyz/output .aixyz/output
+COPY --from=build /app/agents/superagent/.aixyz/output .aixyz/output
 CMD ["bun", ".aixyz/output/server.js"]
