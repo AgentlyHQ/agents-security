@@ -1,6 +1,6 @@
 FROM golang:1.22-alpine AS build
 WORKDIR /app
-COPY go.mod main.go ./
+COPY services/gitleaks/go.mod services/gitleaks/main.go ./
 RUN go build -o server .
 
 FROM zricethezav/gitleaks:latest
