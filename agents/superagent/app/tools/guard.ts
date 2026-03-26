@@ -42,15 +42,23 @@ export default tool({
     const headers = provider.authHeader("");
     const endpoint = provider.buildUrl!(provider.baseUrl, model);
 
-    const response = await fetch(endpoint, {
-      method: "POST",
-      headers,
-      body: JSON.stringify(requestBody),
-    });
+    let response: Response | undefined;
+    for (let attempt = 0; attempt < 5; attempt++) {
+      response = await fetch(endpoint, {
+        method: "POST",
+        headers,
+        body: JSON.stringify(requestBody),
+      });
 
-    if (!response.ok) {
-      const errorText = await response.text();
-      throw new Error(`Guard API error (${response.status}): ${errorText}`);
+      if (response.ok) break;
+      if (attempt < 4) {
+        await new Promise((r) => setTimeout(r, 3000 * 2 ** attempt));
+      }
+    }
+
+    if (!response!.ok) {
+      const errorText = await response!.text();
+      throw new Error(`Guard API error (${response!.status}): ${errorText}`);
     }
 
     const responseData = await response.json();
