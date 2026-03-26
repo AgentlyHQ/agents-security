@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "ai": "^6",
-    "aixyz": "0.31.0",
+    "aixyz": "0.33.0",
     "safety-agent": "^0.1.6",
     "zod": "^4"
   },

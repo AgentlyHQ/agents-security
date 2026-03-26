@@ -6,7 +6,7 @@
       "name": "@agentlyhq/agents-security",
       "devDependencies": {
         "@types/bun": "^1.3.10",
-        "aixyz": "0.31.0",
+        "aixyz": "0.33.0",
         "husky": "^9.1.7",
         "lint-staged": "^16.2.7",
         "prettier": "^3.8.1",
@@ -19,7 +19,7 @@
       "name": "gitleaks",
       "dependencies": {
         "ai": "^6",
-        "aixyz": "0.31.0",
+        "aixyz": "0.33.0",
         "zod": "^4",
       },
       "devDependencies": {
@@ -32,7 +32,7 @@
       "name": "superagent",
       "dependencies": {
         "ai": "^6",
-        "aixyz": "0.31.0",
+        "aixyz": "0.33.0",
         "safety-agent": "^0.1.6",
         "zod": "^4",
       },
@@ -54,11 +54,11 @@
 
     "@ai-sdk/provider-utils": ["@ai-sdk/provider-utils@4.0.21", "", { "dependencies": { "@ai-sdk/provider": "3.0.8", "@standard-schema/spec": "^1.1.0", "eventsource-parser": "^3.0.6" }, "peerDependencies": { "zod": "^3.25.76 || ^4.1.8" } }, "sha512-MtFUYI1/8mgDvRmaBDjbLJPFFrMG777AvSgyIFQtZHIMzm88R/12vYBBpnk7pfiWLFE1DSZzY4WDYzGbKAcmiw=="],
 
-    "@aixyz/cli": ["@aixyz/cli@0.31.0", "", { "dependencies": { "@aixyz/config": "0.31.0", "@aixyz/erc-8004": "0.31.0", "@inquirer/prompts": "^8.3.0", "@next/env": "^16.1.6", "boxen": "^8.0.1", "chalk": "^5.6.2", "commander": "^14.0.3", "ethers": "^6.16.0", "sharp": "^0.34.5", "viem": "^2.46.3" }, "bin": { "aixyz-cli": "bin.ts" } }, "sha512-E/c3WZiqdHkVrgItI/d9YWxw3XmmjWKofMRmJ01HfJ7VcyloG+CAJBZsRn9iHlgJdVuAgIHJQQR7JY9oHeJovw=="],
+    "@aixyz/cli": ["@aixyz/cli@0.33.0", "", { "dependencies": { "@aixyz/config": "0.33.0", "@aixyz/erc-8004": "0.33.0", "@inquirer/prompts": "^8.3.0", "@next/env": "^16.1.6", "boxen": "^8.0.1", "chalk": "^5.6.2", "commander": "^14.0.3", "ethers": "^6.16.0", "sharp": "^0.34.5", "viem": "^2.46.3" }, "bin": { "aixyz-cli": "bin.ts" } }, "sha512-E55HAT0tVQDphRC3orrrvm6VjRIx4NRhtTcX5PmH6nKFaJK6uwqyzHxxqANyWEGTkKGPP88v5dMrfV0wmggSbg=="],
 
-    "@aixyz/config": ["@aixyz/config@0.31.0", "", { "dependencies": { "zod": "^4" } }, "sha512-mjJT8N5cS8cFMImBcsh8kAXeAyNGut7JfG2/Eo1EhuPPoiggYPEiLolDlyrzJP9i3ai3JUcmlZEmEyMLnHPAXw=="],
+    "@aixyz/config": ["@aixyz/config@0.33.0", "", { "dependencies": { "zod": "^4" } }, "sha512-fXuAuAVhkH9FtnII0pEziBKsR7lMEZHsPJ9hajpruWPj0RFnDlPbHFkzgFIKlEbpA1H6NaKGvP6y7VSfeTTcxA=="],
 
-    "@aixyz/erc-8004": ["@aixyz/erc-8004@0.31.0", "", { "dependencies": { "zod": "^4" } }, "sha512-5vGOiH6Ggp7vnZ7IdNMnOxrsOE7kje8ua5dQ7u9t4f9T+BYHYA+FQpSGcrF7YhR9ez/i0eXAn9PCG9LfRqgFyA=="],
+    "@aixyz/erc-8004": ["@aixyz/erc-8004@0.33.0", "", { "dependencies": { "zod": "^4" } }, "sha512-6cr+GQNOH1NhG0eQ84qRE196wdkQA3vI/sLHAgeN3ZHZRrEFScWpsmLnpW8btSmY8bJOE+kNhwB/Fd+UJA8+dA=="],
 
     "@aws-crypto/crc32": ["@aws-crypto/crc32@5.2.0", "", { "dependencies": { "@aws-crypto/util": "^5.2.0", "@aws-sdk/types": "^3.222.0", "tslib": "^2.6.2" } }, "sha512-nLbCWqQNgUiwwtFsen1AdzAtvuLRsQS8rYgMuxCrdKf9kOssamGLuPwyTY9wyYblNr9+1XM8v6zoDTPPSIeANg=="],
 
@@ -406,7 +406,7 @@
 
     "ai": ["ai@6.0.138", "", { "dependencies": { "@ai-sdk/gateway": "3.0.80", "@ai-sdk/provider": "3.0.8", "@ai-sdk/provider-utils": "4.0.21", "@opentelemetry/api": "1.9.0" }, "peerDependencies": { "zod": "^3.25.76 || ^4.1.8" } }, "sha512-49OfPe0f5uxJ6jUdA5BBXjIinP6+ZdYfAtpF2aEH64GA5wPcxH2rf/TBUQQ0bbamBz/D+TLMV18xilZqOC+zaA=="],
 
-    "aixyz": ["aixyz@0.31.0", "", { "dependencies": { "@a2a-js/sdk": "^0.3.10", "@aixyz/cli": "0.31.0", "@aixyz/config": "0.31.0", "@aixyz/erc-8004": "0.31.0", "@kitajs/html": "^4.2.13", "@modelcontextprotocol/sdk": "^1.27.1", "@next/env": "^16.1.6", "@x402/core": "^2.3.1", "@x402/evm": "^2.3.1", "@x402/mcp": "^2.3.0", "jose": "^6.1.3", "zod": "^4" }, "peerDependencies": { "@ai-sdk/provider": "^3", "ai": "^6" }, "optionalPeers": ["ai"], "bin": { "aixyz": "bin.js" } }, "sha512-QveJTm4F0bnDob60vYX7pOvtwq8zMDHmEHngl65PcMT2TZPMqcw4VW+1ZfC0ZHmAtJ8zijHWxRGLTeSl+VoiSw=="],
+    "aixyz": ["aixyz@0.33.0", "", { "dependencies": { "@a2a-js/sdk": "^0.3.10", "@aixyz/cli": "0.33.0", "@aixyz/config": "0.33.0", "@aixyz/erc-8004": "0.33.0", "@kitajs/html": "^4.2.13", "@modelcontextprotocol/sdk": "^1.27.1", "@next/env": "^16.1.6", "@x402/core": "^2.3.1", "@x402/evm": "^2.3.1", "@x402/mcp": "^2.3.0", "jose": "^6.1.3", "zod": "^4" }, "peerDependencies": { "@ai-sdk/provider": "^3", "ai": "^6" }, "optionalPeers": ["ai"], "bin": { "aixyz": "bin.js" } }, "sha512-R1pTRII+VFBsivcwXh/as7JTmAKVQJUR74lOoPE5CvVVNGwl3iE36Ji8gdZJoyyk0TC6bOTtAP1zWeaBE5YxNw=="],
 
     "ajv": ["ajv@8.18.0", "", { "dependencies": { "fast-deep-equal": "^3.1.3", "fast-uri": "^3.0.1", "json-schema-traverse": "^1.0.0", "require-from-string": "^2.0.2" } }, "sha512-PlXPeEWMXMZ7sPYOHqmDyCJzcfNrUr3fGNKtezX14ykXOEIvyK81d+qydx89KY5O71FKMPaQ2vBfBFI5NHR63A=="],
 
