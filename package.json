@@ -29,7 +29,7 @@
     "@types/bun": "^1.3.10",
     "aixyz": "0.33.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
+    "lint-staged": "^17.0.0",
     "prettier": "^3.8.1",
     "prettier-plugin-packagejson": "^3.0.0",
     "turbo": "^2.8.10",
